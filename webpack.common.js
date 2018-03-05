@@ -85,8 +85,6 @@ module.exports = {
 	},
 	plugins: [
 		new CopyWebpackPlugin([
-			{ from: './src/scripts/vendor', to: './scripts/vendor' },
-			{ from: './src/styles/vendor', to:'./styles/vendor'},
 			{ from: './src/lib', to:'./lib'},
 		]),
 		new webpack.ProvidePlugin({

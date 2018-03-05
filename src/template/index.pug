@@ -12,16 +12,18 @@ html(lang="en")
     //- adminlte
     link(rel="stylesheet" href="./lib/adminLte/css/AdminLTE.min.css")
     link(rel="stylesheet" href="./lib/adminLte/css/skins/_all-skins.min.css")
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.16/datatables.css"/>
 
   //- body
-  body.hold-transition.skin-blue.sidebar-mini.login-page
+  body.hold-transition.sidebar-mini.login-page
     include ./components/_header.pug
     include ./components/_sidebar.pug
 
     div.content-wrapper
-      block content
+        //- block content
+        include ./pages/home.pug
 
-    include ./components/_footer.pug
+    //- include ./components/_footer.pug
     
 //- jquery
 script(src="./lib/jquery/jquery.min.js")
