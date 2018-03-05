@@ -98,6 +98,12 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			hash: false,
 			template: './src/template/index.pug',
+			filename:  'index1.html',
+			minify:false,
+		}),
+		new HtmlWebpackPlugin({
+			hash: false,
+			template: './src/template/index.pug',
 			filename:  'index.html',
 			minify:false,
 		}),

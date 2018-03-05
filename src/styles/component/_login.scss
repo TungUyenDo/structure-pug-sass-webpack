@@ -1,0 +1,63 @@
+body{
+    background-color: #F5F5F5
+}
+
+.login-header {
+    height: 135px;
+    background-color: #FEDD36;
+    text-align: center;
+    line-height: 135px;
+}
+.login-form{
+    .login-title{
+        margin: 40px 0;
+        margin-top: 70px;
+        text-align: center;
+        color: #374553 
+    }
+    .login-action{
+        .mg-t40{
+            margin-top: 40px
+        }
+        .login-label{
+            font-size: 20px;
+            color: #374553;
+            margin-bottom: 10px;
+            font-weight: normal
+        }
+        .login-input{
+            height: 55px;
+            border-radius: 5px;
+            border: 1px solid #979797
+        }
+        .login-foot{
+            line-height: 55px;
+            margin-top: 30px;
+            .btn-signin{
+                height: 55px;
+                width: 130px;
+                background-color: #404040;
+                border-radius: 5px;
+                border:none;
+                float:right;
+                color:#fff;
+                &:hover{
+                    background-color: #fff;
+                    color: #404040;
+                    border:1px solid #404040;
+                }
+            }
+            .text-forgotpwd{
+                color:#000;
+                &:hover{
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+        }
+        
+    }
+    max-width: 370px;
+    width: 100%;
+    margin: 0 auto;
+}
