@@ -15,16 +15,24 @@ html(lang="en")
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.16/datatables.css"/>
 
   //- body
-  body.hold-transition.sidebar-mini.login-page
-    include ./components/_header.pug
-    include ./components/_sidebar.pug
+  
+div.login-header 
+    img(src='~assets/1.png' ) 
 
-    div.content-wrapper
-      //- block content
-      include ./pages/home.pug
+div.login-form
+    h3.login-title Sign in with your EB account
+    form.login-action.form-group 
+        label.login-label Username
+        input.form-control.login-input(type="text", placeholder="enter your username")
 
-    //- include ./components/_footer.pug
-    
+        label.login-label.mg-t40 Password
+        input.form-control.login-input(type="text", placeholder="enter password")
+        div.login-foot
+            a.text-forgotpwd Forgot password?
+            button.btn-signin Sign In
+
+
+
 //- jquery
 script(src="./lib/jquery/jquery.min.js")
 //- bootstrap

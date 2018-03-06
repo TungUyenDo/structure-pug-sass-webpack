@@ -1,6 +1,9 @@
 import '../styles/index.scss';
 
-var dt = require('datatables.net')
+var dt = require('datatables.net');
+var express = require('express');
+// var fs = require('fs')
+let Class = require(url);
 
 $("button").on("click", () => { // Khi click button
     System.import('../styles/xinchao.scss').then(()=>{ // chúng ta sẽ import xinchao.css vào
@@ -19,3 +22,14 @@ $(document)
             table.search(this.value).draw();
     });
 });
+
+// router
+
+// var app = express()
+
+// // respond with "hello world" when a GET request is made to the homepage
+// // app.get('/', function (req, res) {
+// //   res.send('hello world')
+// // })
+
+// app.listen(3000);

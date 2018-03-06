@@ -10,6 +10,11 @@ function resolve (dir) {
 }
 
 module.exports = {
+	
+	node: {
+		fs: 'empty',
+		net: 'empty',
+	},
   	entry:{
 		  script :  './src/scripts/index.js',
   	},
@@ -20,7 +25,7 @@ module.exports = {
 		publicPath:"/"
 	},
 	resolve: {
-		extensions: ['.js', '.pug', '.json'],
+		extensions: ['.js', '.pug', '.json',],
 		alias: {
 		  '@': resolve('src'),
 		  'assets': resolve('src/assets')
@@ -95,12 +100,7 @@ module.exports = {
 		new ExtractTextPlugin({
 			filename: "styles/style.bundle.css"
 		}), 
-		new HtmlWebpackPlugin({
-			hash: false,
-			template: './src/template/index.pug',
-			filename:  'index1.html',
-			minify:false,
-		}),
+	
 		new HtmlWebpackPlugin({
 			hash: false,
 			template: './src/template/index.pug',
@@ -109,8 +109,8 @@ module.exports = {
 		}),
 		new HtmlWebpackPlugin({
 			hash: true,
-			template: './src/template/pages/home.pug',
-			filename:  'home.html'
+			template: './src/template/login.pug',
+			filename:  'login.html'
 		})
     ]
 };
